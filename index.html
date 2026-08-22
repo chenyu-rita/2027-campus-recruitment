@@ -90,19 +90,19 @@
   .ring-glow { box-shadow: 0 0 0 1px rgba(75,83,244,.15), 0 20px 40px -20px rgba(75,83,244,.35); }
 </style>
 </head>
-<body class="text-slate-800 antialiased">
+<body class="text-slate-800 antialiased overflow-x-hidden">
 
 <!-- Top Nav -->
 <header class="fixed top-0 inset-x-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-3">
-    <nav class="glass rounded-2xl px-4 sm:px-6 py-3 grid grid-cols-[auto_1fr_auto] items-center gap-4 shadow-lg">
-      <a href="#top" class="flex items-center">
-        <img src="./bytedance-recruitment-logo-horizontal.png" alt="字节跳动招聘" class="h-5 w-auto object-contain" />
+    <nav class="glass rounded-2xl px-3 sm:px-6 py-3 grid grid-cols-[1fr_auto] sm:grid-cols-[auto_1fr_auto] items-center gap-3 sm:gap-4 shadow-lg">
+      <a href="#top" class="flex items-center min-w-0">
+        <img src="./bytedance-recruitment-logo-horizontal.png" alt="字节跳动招聘" class="h-4 sm:h-5 w-auto max-w-[150px] sm:max-w-none object-contain" />
       </a>
-      <div class="text-center leading-tight">
+      <div class="hidden sm:block text-center leading-tight">
         <div class="font-semibold text-slate-800">字节跳动2027届校园招聘</div>
       </div>
-      <a href="https://jobs.bytedance.com/campus/position?keywords=Data-%E4%B8%AD%E5%9B%BD%E4%BA%A4%E6%98%93%E4%B8%8E%E5%B9%BF%E5%91%8A&amp;category=&amp;location=&amp;project=7649336829398468869%2C7624064258157889845&amp;type=&amp;job_hot_flag=&amp;current=1&amp;limit=10&amp;functionCategory=&amp;tag=&amp;spread=4AYNWF7" target="_blank" rel="noopener" class="grad-btn text-white text-sm font-semibold px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-0.5 transition">
+      <a href="https://jobs.bytedance.com/campus/position?keywords=Data-%E4%B8%AD%E5%9B%BD%E4%BA%A4%E6%98%93%E4%B8%8E%E5%B9%BF%E5%91%8A&amp;category=&amp;location=&amp;project=7649336829398468869%2C7624064258157889845&amp;type=&amp;job_hot_flag=&amp;current=1&amp;limit=10&amp;functionCategory=&amp;tag=&amp;spread=4AYNWF7" target="_blank" rel="noopener" class="grad-btn text-white text-xs sm:text-sm font-semibold px-3 sm:px-4 py-2 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-0.5 transition whitespace-nowrap">
         立即投递
       </a>
     </nav>
@@ -110,7 +110,7 @@
 </header>
 
 <!-- Hero -->
-<section id="top" class="relative overflow-hidden pt-28 pb-14 bg-mesh">
+<section id="top" class="relative overflow-hidden pt-24 sm:pt-28 pb-12 sm:pb-14 bg-mesh">
   <div class="absolute inset-0 -z-10">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-gradient-to-br from-brand-200 via-transparent to-accent-400/30 rounded-full blur-3xl opacity-40"></div>
   </div>
@@ -121,7 +121,7 @@
           <span class="w-1.5 h-1.5 rounded-full bg-accent-500 animate-pulse"></span>
           2027届校招岗位火热招聘中🔥
         </div>
-        <h1 class="mt-6 font-display font-black tracking-tight text-4xl sm:text-5xl lg:text-6xl leading-tight text-slate-900 lg:whitespace-nowrap">
+        <h1 class="mt-6 font-display font-black tracking-tight text-3xl sm:text-5xl lg:text-6xl leading-tight text-slate-900 lg:whitespace-nowrap">
           和优秀的人，<br class="hidden sm:block lg:hidden">
           做有挑战的事
         </h1>
@@ -153,11 +153,11 @@
             <p class="mt-5 text-xs text-slate-500 italic">* 中国大陆地区以毕业证为准，非中国大陆地区以学位证为准</p>
           </div>
         </div>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="https://jobs.bytedance.com/campus/position?keywords=Data-%E4%B8%AD%E5%9B%BD%E4%BA%A4%E6%98%93%E4%B8%8E%E5%B9%BF%E5%91%8A&amp;category=&amp;location=&amp;project=7649336829398468869%2C7624064258157889845&amp;type=&amp;job_hot_flag=&amp;current=1&amp;limit=10&amp;functionCategory=&amp;tag=&amp;spread=4AYNWF7" target="_blank" rel="noopener" class="grad-btn text-white font-semibold px-6 py-3 rounded-2xl shadow-xl shadow-brand-500/30 hover:-translate-y-0.5 transition">
+        <div class="mt-8 grid grid-cols-1 sm:flex sm:flex-wrap gap-3">
+          <a href="https://jobs.bytedance.com/campus/position?keywords=Data-%E4%B8%AD%E5%9B%BD%E4%BA%A4%E6%98%93%E4%B8%8E%E5%B9%BF%E5%91%8A&amp;category=&amp;location=&amp;project=7649336829398468869%2C7624064258157889845&amp;type=&amp;job_hot_flag=&amp;current=1&amp;limit=10&amp;functionCategory=&amp;tag=&amp;spread=4AYNWF7" target="_blank" rel="noopener" class="grad-btn text-white font-semibold px-6 py-3 rounded-2xl shadow-xl shadow-brand-500/30 hover:-translate-y-0.5 transition text-center">
             🚀 立即投递
           </a>
-          <a href="#teams" class="glass text-slate-800 font-semibold px-6 py-3 rounded-2xl hover:bg-white transition">
+          <a href="#teams" class="glass text-slate-800 font-semibold px-6 py-3 rounded-2xl hover:bg-white transition text-center">
             📚 查看方向 &amp; 岗位
           </a>
         </div>
@@ -178,9 +178,9 @@
 
     <!-- Tabs -->
     <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8" id="team-tabs">
-      <button data-tab="ec" class="tab-btn active text-slate-600 bg-slate-100 hover:bg-slate-200 font-semibold text-sm px-4 py-2.5 rounded-xl">🛍️ 抖音电商 &amp; 🎥 抖音直播</button>
-      <button data-tab="tns" class="tab-btn text-slate-600 bg-slate-100 hover:bg-slate-200 font-semibold text-sm px-4 py-2.5 rounded-xl">🛡️ 信任与安全 &amp; Commercial AI - 审核治理大模型</button>
-      <button data-tab="cai" class="tab-btn text-slate-600 bg-slate-100 hover:bg-slate-200 font-semibold text-sm px-4 py-2.5 rounded-xl">🧠 Commercial AI - Horizon &amp; Evals</button>
+      <button data-tab="ec" class="tab-btn active text-slate-600 bg-slate-100 hover:bg-slate-200 font-semibold text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl">🛍️ 抖音电商 &amp; 🎥 抖音直播</button>
+      <button data-tab="tns" class="tab-btn text-slate-600 bg-slate-100 hover:bg-slate-200 font-semibold text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl">🛡️ 信任与安全 &amp; Commercial AI - 审核治理大模型</button>
+      <button data-tab="cai" class="tab-btn text-slate-600 bg-slate-100 hover:bg-slate-200 font-semibold text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl">🧠 Commercial AI - Horizon &amp; Evals</button>
     </div>
 
     <!-- Tab contents -->
@@ -221,7 +221,7 @@
               </div>
             </div>
             <div class="lg:col-span-2">
-              <div class="mt-4 flex flex-nowrap justify-center gap-2 whitespace-nowrap overflow-visible">
+              <div class="mt-4 flex flex-wrap justify-center gap-2">
                 <span class="px-3 py-1 rounded-full bg-white/80 text-xs font-medium text-slate-600 border border-slate-200">大模型算法</span>
                 <span class="px-3 py-1 rounded-full bg-white/80 text-xs font-medium text-slate-600 border border-slate-200">推荐 / 广告 / 营销算法</span>
                 <span class="px-3 py-1 rounded-full bg-white/80 text-xs font-medium text-slate-600 border border-slate-200">生成式推荐 / LLM4Rec</span>
@@ -249,7 +249,7 @@
                     </a>
                   </div>
                   <div class="mt-3 space-y-2">
-                    <p class="text-[11px] sm:text-xs text-white/70 italic whitespace-nowrap">* 如需内推请务必<b class="font-semibold text-white">先填写内推码</b>再投递，投递后不得补充内推码</p>
+                    <p class="text-[11px] sm:text-xs text-white/70 italic leading-relaxed">* 如需内推请务必<b class="font-semibold text-white">先填写内推码</b>再投递，投递后不得补充内推码</p>
                   </div>
                 </div>
               </div>
@@ -309,7 +309,7 @@
                     </a>
                   </div>
                   <div class="mt-6 space-y-2">
-                    <p class="text-xs text-white/70 italic whitespace-nowrap">* 如需内推请务必<b class="font-semibold text-white">先填写内推码</b>再投递，投递后不得补充内推码</p>
+                    <p class="text-xs text-white/70 italic leading-relaxed">* 如需内推请务必<b class="font-semibold text-white">先填写内推码</b>再投递，投递后不得补充内推码</p>
                   </div>
                 </div>
               </div>
@@ -368,7 +368,7 @@
                     </a>
                   </div>
                   <div class="mt-6 space-y-2">
-                    <p class="text-xs text-white/70 italic whitespace-nowrap">* 如需内推请务必<b class="font-semibold text-white">先填写内推码</b>再投递，投递后不得补充内推码</p>
+                    <p class="text-xs text-white/70 italic leading-relaxed">* 如需内推请务必<b class="font-semibold text-white">先填写内推码</b>再投递，投递后不得补充内推码</p>
                   </div>
                 </div>
               </div>
@@ -416,10 +416,10 @@
           <li><a class="hover:text-white" href="#teams">🎯 查看方向与岗位</a></li>
         </ul>
       </div>
-      <div class="flex items-center gap-2 rounded-xl bg-white/5 border border-white/10 p-2 justify-self-end self-start">
-        <img src="./hr-wechat-qr-centered.jpg" alt="HR 微信二维码" class="w-16 h-16 rounded-lg bg-white object-contain object-center" />
-        <div class="text-[11px] leading-relaxed text-white/80">
-          <div class="font-semibold text-white">前沿技术领域人才校招 / 2027届校园招聘</div>
+      <div class="flex items-start sm:items-center gap-2 rounded-xl bg-white/5 border border-white/10 p-2 justify-self-stretch sm:justify-self-end self-start">
+        <img src="./hr-wechat-qr-centered.jpg" alt="HR 微信二维码" class="w-16 h-16 rounded-lg bg-white object-contain object-center flex-shrink-0" />
+        <div class="text-[11px] leading-relaxed text-white/80 min-w-0">
+          <div class="font-semibold text-white break-words">前沿技术领域人才校招 / 2027届校园招聘</div>
           <div class="mt-1 font-bold text-yellow-300">欢迎加HR微信交流</div>
         </div>
       </div>
